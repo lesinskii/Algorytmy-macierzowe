@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728680377.78176 "c:/z-studia/5_semestr/macierzowe/lab1/sprawko/main.tex" "main.pdf" "main" 1728680379.19773 0
+["pdflatex"] 1728683789.09643 "c:/z-studia/5_semestr/macierzowe/Algorytmy-macierzowe/lab1/sprawko/main.tex" "main.pdf" "main" 1728683789.80696 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727873367 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1727873418 11947766 873a598aaa33f7af8885189eb2e833c7 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -34,9 +34,9 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/lm/omslmsy.fd" 1430474546 807 3de192f3efa968913bd2f096a7b430d8 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/lm/omxlmex.fd" 1430474546 568 a5494d810f2680caf10205cd1226c76c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/lm/ot1lmr.fd" 1430474546 1882 28c08db1407ebff35a658fd141753d16 ""
-  "c:/z-studia/5_semestr/macierzowe/lab1/sprawko/main.tex" 1728680371 350 688d21de1d9ed7647582cd6873b48a4f ""
-  "main.aux" 1728680378 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.tex" 1728680371 350 688d21de1d9ed7647582cd6873b48a4f ""
+  "c:/z-studia/5_semestr/macierzowe/Algorytmy-macierzowe/lab1/sprawko/main.tex" 1728683787 328 e9d7a7c5dcd24fbb4de5ef9e39f90ba7 ""
+  "main.aux" 1728683789 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1728683787 328 e9d7a7c5dcd24fbb4de5ef9e39f90ba7 ""
   (generated)
   "main.aux"
   "main.log"

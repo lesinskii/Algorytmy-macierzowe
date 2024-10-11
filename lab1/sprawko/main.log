@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.2)  11 OCT 2024 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.2)  11 OCT 2024 23:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/z-studia/5_semestr/macierzowe/lab1/sprawko/main.tex
-(c:/z-studia/5_semestr/macierzowe/lab1/sprawko/main.tex
+**c:/z-studia/5_semestr/macierzowe/Algorytmy-macierzowe/lab1/sprawko/main.tex
+(c:/z-studia/5_semestr/macierzowe/Algorytmy-macierzowe/lab1/sprawko/main.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -179,15 +179,15 @@ L3 programming layer <2024-08-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1300 strings out of 473898
- 21323 string characters out of 5726951
- 404770 words of memory out of 5000000
- 24204 multiletter control sequences out of 15000+600000
+ 1299 strings out of 473898
+ 21462 string characters out of 5726951
+ 404755 words of memory out of 5000000
+ 24203 multiletter control sequences out of 15000+600000
  580894 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,65p,266b,213s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,7n,65p,287b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-Output written on main.pdf (1 page, 95808 bytes).
+Output written on main.pdf (1 page, 94444 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
