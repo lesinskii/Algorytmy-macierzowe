@@ -1,17 +1,126 @@
 
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{float}
 
 \title{Algorytmy macierzowe - rekurencyjne mnożenie macierzy}
-\author{Jakub Karoń, Kamil Lesiński \\\\ Grupa 2}
-\date{Październik 2024}
+\author{Jakub Karoń, Kamil Lesiński \\\\ Grupa 6}
+\date{15.10.2024}
 
 \begin{document}
 
 \maketitle
 
-\section*{1. Opis programu}
+\section{Opis ćwiczenia}
+    Proszę wybrać ulubiony język programowania, wygenerować
+    macierze losowe o wartościach z przedziału otwartego
+    (0.00000001, 1.0) i zaimplementować
+    \begin{enumerate}
+        \item Rekurencyjne mnożenie macierzy metodą Binét’a (10 punktów)
+        \item Rekurencyjne mnożenie macierzy metodą Strassena (10 punktów)
+        \item Mnożenie macierzy metodą AI na podstawie artykułu w Nature (10 punktów)
+    \end{enumerate}
+    Proszę zliczać liczbę operacji zmienno-przecinkowych \verb|(+-*/_liczb_)| wykonywanych podczas mnożenia macierzy.
 
+\section{Środowisko}
+    Ćwiczenie zostało wykonane w języku Python. Do obliczeń użyliśmy biblioteki numpy. Do rysowania wykresów użyliśmy bibliotekę matplotlib.
+
+\section{Implementacja algorytmów}
+    \subsection{Rekurencyjne mnożenie macierzy metodą Binete'a}
+
+        \textbf{binet\_multiply(A,B):} \hfill \# Binet Matrix Multiplication
+
+        \textbf{Jeżeli} A oraz B mają rozmiar 1:
+        \begin{itemize}
+            \item \textbf{Zwróć} A*B
+        \end{itemize}
+
+        \textbf{W przeciwnym wypadku:}
+        \begin{itemize}
+            \item Podziel A i B na 4 równych rozmiarów mniejsze macierze
+        \end{itemize}
+
+        \[
+        A = 
+        \begin{bmatrix}
+            A_{11} & A_{12} \\
+            A_{21} & A_{22}
+        \end{bmatrix}
+        \]
+
+        \textbf{Zapisz do pomocniczych zmiennych M:}
+        \begin{align*}
+        M_0 & = binet\_multiply(A_{11}, B_{11}) \\
+        M_1 & = binet\_multiply(A_{12}, B_{21}) \\
+        M_2 & = binet\_multiply(A_{21}, B_{11}) \\
+        M_3 & = binet\_multiply(A_{22}, B_{21}) \\
+        M_4 & = binet\_multiply(A_{11}, B_{12}) \\
+        M_5 & = binet\_multiply(A_{12}, B_{22}) \\
+        M_6 & = binet\_multiply(A_{21}, B_{12}) \\
+        M_7 & = binet\_multiply(A_{22}, B_{22})
+        \end{align*}
+
+        \textbf{Zapisz macierz C jako:}
+        \begin{align*}
+        C_1 & = M_0 + M_1 \\
+        C_2 & = M_4 + M_5 \\
+        C_3 & = M_2 + M_3 \\
+        C_4 & = M_6 + M_7
+        \end{align*}
+
+        \textbf{Zwróć C}
+
+    \subsection{Rekurencyjne mnożenie macierzy metodą Strassena}
+        \textbf{strassen\_multiply(A,B):} \hfill \# Strassen Matrix Multiplication
+
+        \textbf{Jeżeli} A oraz B mają rozmiar 1:
+        \begin{itemize}
+            \item \textbf{Zwróć} A*B
+        \end{itemize}
+        
+        \textbf{W przeciwnym wypadku:}
+        \begin{itemize}
+            \item Podziel A i B na 4 równych rozmiarów mniejsze macierze
+        \end{itemize}
+        
+        \[
+        A = 
+        \begin{bmatrix}
+            A_{11} & A_{12} \\
+            A_{21} & A_{22}
+        \end{bmatrix}
+        \]
+        
+        \textbf{Zapisz do pomocniczych zmiennych M:}
+        \begin{align*}
+        M_1 &= strassen\_multiply(A_{11} + A_{22}, B_{11} + B_{22}) \\
+        M_2 &= strassen\_multiply(A_{21} + A_{22}, B_{11}) \\
+        M_3 &= strassen\_multiply(A_{11}, B_{12} - B_{22}) \\
+        M_4 &= strassen\_multiply(A_{22}, B_{21} - B_{11}) \\
+        M_5 &= strassen\_multiply(A_{11} + A_{12}, B_{22}) \\
+        M_6 &= strassen\_multiply(A_{21} - A_{11}, B_{11} + B_{12}) \\
+        M_7 &= strassen\_multiply(A_{12} - A_{22}, B_{21} + B_{22})
+        \end{align*}
+        
+        \textbf{Zapisz macierz C jako:}
+        \begin{align*}
+        C_1 &= M_1 + M_4 - M_5 + M_7 \\
+        C_2 &= M_3 + M_5 \\
+        C_3 &= M_2 + M_4 \\
+        C_4 &= M_1 - M_2 + M_3 + M_6
+        \end{align*}
+        
+        \textbf{Zwróć C}
+    
+    \subsection{Rekurencyjne mnożenie macierzy zaproponowane przez AI}
+\section{Analiza pomiarów}
 \end{document}
